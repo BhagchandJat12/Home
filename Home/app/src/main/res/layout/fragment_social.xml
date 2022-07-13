@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_margin="11dp"
+android:orientation="vertical"
+    tools:context=".Social">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:src="@mipmap/ci" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/boy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+
+        android:cropToPadding="true"
+        android:foregroundGravity="center_horizontal"
+        android:src="@mipmap/boy"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_below="@id/img"
+            android:id="@+id/name12"
+            style="@style/small_text"
+            android:textColor="#E91E63"
+            android:layout_centerHorizontal="true"
+            android:text="Simran Jeet"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_below="@id/name12"
+        android:id="@+id/jaipur"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:text="Jaipur,Rajasthan"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="11dp"
+        android:layout_below="@+id/jaipur">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:id="@+id/desc"
+            android:text="I design experiences mostly. I also some time travel. "/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/l8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21dp"
+                    android:text="6,281K" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21dp"
+                    android:text="Follower" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21dp"
+                    android:text="10.8K" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="21dp"
+                    android:text="Following" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/small_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_border"
+                android:backgroundTint="@color/sky"
+                android:text="Follow"
+                android:textColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l8"
+            android:id="@+id/text4"
+            android:layout_marginTop="11dp"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

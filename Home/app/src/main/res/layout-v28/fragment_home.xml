@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="11dp"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/custom_button"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_home_24" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name"
+        style="@style/small_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginBottom="11dp"
+        android:drawableEnd="@drawable/ic_baseline_home_24"
+        android:drawablePadding="11dp"
+        android:text="Hey, Simran" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/book_doc"
+        android:layout_width="wrap_content"
+        style="@style/big_text"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginBottom="11dp"
+        android:text="@string/book_doctor_s_n_appointment_now" />
+
+    <RelativeLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_doc"
+        android:layout_marginBottom="11dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appointment"
+            style="@style/small_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/layout_border"
+            android:backgroundTint="@color/black"
+            android:text="Appointment"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/analytics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="11dp"
+            android:text="Analytics" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_arrow_forward_24" />
+    </RelativeLayout>
+    
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="11dp"
+        android:backgroundTint="#E91E63"
+        android:layout_margin="11dp"
+        android:layout_below="@+id/l2"
+        android:id="@+id/card1"
+        android:outlineAmbientShadowColor="#EC578A">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:id="@+id/l3"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="11dp"
+                android:layout_gravity="center"
+                android:layout_weight=".1"
+                android:src="@drawable/ic_baseline_home_24"
+                android:id="@+id/profile"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:id="@+id/l4"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="John Terry"
+                    style="@style/small_text"
+                    android:textColor="@color/white"
+                    android:id="@+id/p_name"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/details"
+                    style="@style/small_text"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginBottom="11dp"
+                    android:text="32 Years"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_video_call_24"
+            android:id="@+id/video"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_margin="11dp"
+            android:background="@drawable/custom_button"
+            android:drawableStart="@drawable/ic_baseline_home_24"
+            android:drawablePadding="11dp"
+            android:id="@+id/time"
+            android:textColor="@color/white"
+            android:text="Sun, Jan 19, 08:00am-10:00am"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="11dp"
+        android:layout_below="@+id/card1"
+        android:id="@+id/card2"
+        app:cardCornerRadius="11dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ln1"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="11dp"
+                android:id="@+id/progress"
+                android:layout_gravity="center"
+                android:layout_weight=".4"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_weight=".6"
+                android:layout_margin="11dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                   android:background="@drawable/layout_border"
+                    android:layout_marginBottom="11dp"
+                    android:text="Daily Tasks"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your 14 tasks are pending \n for next week"/>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_margin="11dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="11dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/appoin"
+            android:layout_weight=".4"
+            android:drawablePadding="11dp"
+            android:text="Appointment"
+            android:drawableStart="@drawable/ic_baseline_remove_circle_24"
+            android:drawableTint="@color/dark_red"
+           />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tasks"
+            android:layout_weight=".6"
+            android:drawablePadding="11dp"
+            android:text="Diets"
+            android:drawableStart="@drawable/ic_baseline_remove_circle_24"
+            android:drawableTint="@android:color/darker_gray"
+
+           />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diets"
+            android:drawablePadding="11dp"
+            android:text="Task"
+            android:layout_margin="11dp"
+            android:drawableStart="@drawable/ic_baseline_remove_circle_24"
+            android:drawableTint="#FFEB3B"
+
+           />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+    
+
+
+
+</RelativeLayout>

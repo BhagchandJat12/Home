@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+
+    <item android:id="@+id/chat"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/chat"/>
+
+    <item android:id="@+id/Bot"
+        android:icon="@drawable/ic_baseline_remove_circle_24"
+        android:title="@string/bot"/>
+
+    <item android:id="@+id/doctor"
+        android:icon="@drawable/ic_baseline_self_improvement_24"
+        android:title="@string/doctor"/>
+
+    <item android:id="@+id/social"
+        android:icon="@drawable/ic_baseline_sports_soccer_24"
+        android:title="@string/social"
+         />
+
+
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="doctor">Doctor</string>
+    <string name="bot">Bot</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="book_doctor_s_n_appointment_now">Book Doctor\'s \n Appointment NOw</string>
+    <string name="social">Social</string>
+</resources>
